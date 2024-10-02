@@ -27,7 +27,7 @@ $badword = $_GET["testoCensura"];
             <!-- modifico la badword e stampo la frase -->
             <h1>
                 Il paragrafo è: <?php $phrase;echo str_ireplace($badword, "***", $phrase); ?>
-                La sua lunghezza è: <?php echo strlen($phrase);?>
+                La lunghezza del paragrafo è: <?php echo strlen($phrase);?>
             </h1>
         </div>
     </main>
