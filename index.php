@@ -9,16 +9,29 @@
 </head>
 
 <body>
-    <main class="container" method="get">
-        <form action="badwords.php">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Zumbo è una vrenzola</label>
-                <input type="input" class="form-control" id="exampleFormControlInput1" placeholder="Zumbo è una vrenzola">
-            </div>
+    <header class="mb-5">
+        <div class="container">
+            <h1 class="text-center">INSULTATORE</h1>
+        </div>
+    </header>
 
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <main class="container border border-1 rounded p-3" method="GET">
+        <form action="badwords.php">
+            <div class="row">
+                <div class="col-6 mb-3">
+                    <label for="insulto" class="form-label">Dedica un insulto:</label>
+                    <input type="input" class="form-control" id="insulto" name="insulto" placeholder="Zumbo è una vrenzola">
+                </div>
+
+                <div class="col-6 mb-3">
+                    <label for="censura" class="form-label">Inserisci la parola da censurare:</label>
+                    <input type="input" class="form-control" id="censura" name="censura" placeholder="vrenzola">
+                </div>
+
+                <div class="d-flex gap-2 justify-content-center">
+                    <button type="button" class="btn btn-primary btn-invio">Invia</button>
+                    <button type="reset" class="btn btn-danger btn-invio">Reset</button>
+                </div>
             </div>
         </main>
     </form>
