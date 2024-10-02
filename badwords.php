@@ -1,3 +1,4 @@
+<!-- Prendo i valori dal form di index.php -->
 <?php
 $phrase = $_GET["testoInsulto"];
 $badword = $_GET["testoCensura"];
@@ -14,14 +15,16 @@ $badword = $_GET["testoCensura"];
 </head>
 
 <body>
-    <main class="container border border-1 rounded p-3" method="GET">
-        <div class="row">
+    <main class="container p-3" method="GET">
+        <div class="border border-black border-3 rounded-4 p-2 row mb-3">
+            <!-- stampo la frase inserita in index.php -->
             <h1>
                 Il paragrafo è: <?php echo $phrase; ?>
                 La sua lunghezza è: <?php echo strlen($phrase);?>
             </h1>
         </div>
-        <div class="row">
+        <div class="border border-black border-3 rounded-4 p-2 row mb-3">
+            <!-- modifico la badword e stampo la frase -->
             <h1>
                 Il paragrafo è: <?php $phrase;echo str_ireplace($badword, "***", $phrase); ?>
                 La sua lunghezza è: <?php echo strlen($phrase);?>
