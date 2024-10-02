@@ -20,7 +20,7 @@ $badword = $_GET["testoCensura"];
             <!-- stampo la frase inserita in index.php -->
             <h1>
                 Il paragrafo è: <?php echo $phrase; ?>
-                La sua lunghezza è: <?php echo strlen($phrase);?>
+                La lunghezza del paragrafo è: <?php echo strlen($phrase);?>
             </h1>
         </div>
         <div class="border border-black border-3 rounded-4 p-2 row mb-3">
