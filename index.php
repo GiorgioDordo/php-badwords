@@ -15,26 +15,26 @@
         </div>
     </header>
 
-    <main class="container border border-1 rounded p-3" method="GET">
-        <form action="badwords.php">
+    <main class="container border border-1 rounded p-3">
+        <form action="./badwords.php" method="GET">
             <div class="row">
                 <div class="col-6 mb-3">
                     <label for="insulto" class="form-label">Dedica un insulto:</label>
-                    <input type="input" class="form-control" id="insulto" name="insulto" placeholder="Zumbo è una vrenzola">
+                    <input type="text" class="form-control" id="insulto" name="testoInsulto" placeholder="Zumbo è una vrenzola">
                 </div>
 
                 <div class="col-6 mb-3">
                     <label for="censura" class="form-label">Inserisci la parola da censurare:</label>
-                    <input type="input" class="form-control" id="censura" name="censura" placeholder="vrenzola">
+                    <input type="text" class="form-control" id="censura" name="testoCensura" placeholder="vrenzola">
                 </div>
 
                 <div class="d-flex gap-2 justify-content-center">
-                    <button type="button" class="btn btn-primary btn-invio">Invia</button>
+                    <button type="submit" class="btn btn-primary btn-invio">Invia</button>
                     <button type="reset" class="btn btn-danger btn-invio">Reset</button>
                 </div>
             </div>
-        </main>
-    </form>
+        </form>
+    </main>       
 </body>
 
 </html>
